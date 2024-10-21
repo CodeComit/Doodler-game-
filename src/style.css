@@ -1,0 +1,89 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper{
+  width: 400px;
+  height:100%;
+  border: 5px dotted rgba(255, 191, 0, 0.545);
+  border-radius: 20px;
+  padding:20px;
+  margin:10px;
+ display: grid;
+}
+.grid {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    /* background-color: #f8f1f1bb; */
+    background-image: url('../assets/background.png');
+  
+    position: relative;
+    font-size: 100px;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 20px;
+  }
+  
+  .doodler {
+    width: 87px;
+    height: 85px;
+   background-image: url('../assets/doodler.jpeg ');
+    position: absolute;
+  }
+  
+  .platform {
+    width: 85px;
+    height: 15px;
+    background-image: url('../assets/platform.png');
+    position: absolute;
+  }
+  body{
+    background: rgb(0, 0, 255);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+.box p{
+  margin-top: 10px;
+    position: relative;
+    color:rgb(243, 228, 15);
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    padding: 5px;
+}
+.start{
+  margin-top: 10px;
+     background-color: black;
+    color: rgba(225, 255, 0, 0.988);
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    border-bottom: 2px solid rgb(208, 21, 21);
+    border-right:2px solid rgb(238, 17, 17);
+ 
+}
+.box p::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  height:100%;
+  width: 50%;
+  background:  rgb(0, 0, 255);
+  border-left: 2px solid  rgba(225, 255, 0, 0.988);
+  animation: typing 1.5s steps(14) infinite;
+}
+@keyframes typing {
+  100%{
+    left:55%;
+  }
+}
+.card {
+  position: relative;
+}
